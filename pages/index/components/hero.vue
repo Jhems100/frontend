@@ -1,38 +1,57 @@
 <template>
-    <v-parallax src="https://i.pinimg.com/564x/45/be/d2/45bed291ef0f2aee6630107b593bf5ac.jpg">
-      <v-row
-        class="fill-height"
-        align="center"
-        justify="center"
+    <v-carousel
+      height="400"
+      show-arrows="hover"
+      cycle
+      hide-delimiter-background
+    >
+      <v-carousel-item
+        v-for="(slide, i) in slides"
+        :key="i"
       >
-        <v-col class="text-center">
-          <h1 class="display-2 mb-5">Bienvenido a mi Sitio</h1>
-          <p class="subheading mb-5">Explora nuestro contenido y descubre más sobre nosotros.</p>
-          <v-btn color="primary" @click="goToAbout" class="mr-4">Acerca de</v-btn>
-          <v-btn color="primary" @click="goToProducts">Productos</v-btn>
-        </v-col>
-      </v-row>
-    </v-parallax>
+        <v-sheet
+          :color="colors[i]"
+          height="100%"
+        >
+          <div class="d-flex fill-height justify-center align-center">
+            <div class="text-h2">
+              {{ slide }}
+            </div>
+          </div>
+        </v-sheet>
+      </v-carousel-item>
+    </v-carousel>
   </template>
   
   <script>
   export default {
-    methods: {
-      goToAbout() {
-        // Aquí puedes definir la lógica para navegar a la página "Acerca de"
-        console.log("Navegar a la página Acerca de");
+      data () {
+        return {
+          colors: [
+            'indigo',
+            'warning',
+            'pink darken-2',
+            'red lighten-1',
+            'deep-purple accent-4',
+          ],
+          slides: [
+            'Dashboards',
+            'Control de stock',
+            'Ordenes',
+            'Estafisticas ',
+            'Fifth',
+          ],
+        }
       },
-      goToProducts() {
-        // Aquí puedes definir la lógica para navegar a la página de "Productos"
-        console.log("Navegar a la página de Productos");
-      }
     }
-  };
   </script>
   
   <style scoped>
   .subheading {
     font-size: 1.5em;
+  }
+  .text-center{
+    color: white;
   }
   </style>
   
