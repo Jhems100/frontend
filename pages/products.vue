@@ -1,119 +1,133 @@
 <template>
   <v-app>
     <v-app-bar app color="primary">
-      <v-toolbar-title>My App</v-toolbar-title>
-      <v-btn text @click="redirectTo('/')">Home</v-btn>
-      <v-btn text @click="redirectTo('/products')">Products</v-btn>
-      <v-btn text @click="redirectTo('/about')">About</v-btn>
+      <v-toolbar-title>IzziStocks</v-toolbar-title>
+      <v-btn text @click="redirectTo('/')">pagina principal</v-btn>
+      <v-btn text @click="redirectTo('/products')">planes y servicios</v-btn>
+      <v-btn text @click="redirectTo('/about')">sobre nosotros</v-btn>
     </v-app-bar>
 
     <div class="d-flex align-center justify-center fill-height">
-      <v-card
-        :disabled="loading"
-        :loading="loading"
-        class="mx-auto my-12"
-        max-width="374"
-      >
-        <template v-slot:loader="{ isActive }">
-          <v-progress-linear
-            :active="isActive"
-            color="deep-purple"
-            height="4"
-            indeterminate
-          ></v-progress-linear>
-        </template>
+      <v-row class="mx-auto my-12" align="center" justify="center" style="width: 100%;">
+        <v-col cols="auto" class="mx-1">
+          <v-card :disabled="loading" :loading="loading" max-width="374">
+            <template v-slot:loader="{ isActive }">
+              <v-progress-linear :active="isActive" color="deep-purple" height="4" indeterminate></v-progress-linear>
+            </template>
 
-        <v-img
-          height="250"
-          src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
-          cover
-        ></v-img>
+            <v-img height="250"
+              src="public/el concepto del sistema de control de inventario, el gerente profesional y el trabajador están verificando el suministro de bienes y existencias, la gestión de inventario con la demanda de bienes.jpeg"
+              cover></v-img>
 
-        <v-card-item>
-          <v-card-title>Cafe Badilico</v-card-title>
+            <v-card-item>
+              <v-card-title>Plan Basico</v-card-title>
 
-          <v-card-subtitle>
-            <span class="me-1">Local Favorite</span>
+              <v-card-subtitle>
+                <span class="me-1">Sugerido</span>
 
-            <v-icon
-              color="error"
-              icon="mdi-fire-circle"
-              size="small"
-            ></v-icon>
-          </v-card-subtitle>
-        </v-card-item>
+                <v-icon color="error" icon="mdi-fire-circle" size="small"></v-icon>
+              </v-card-subtitle>
+            </v-card-item>
 
-        <v-card-text>
-          <v-row
-            align="center"
-            class="mx-0"
-          >
-            <v-rating
-              :model-value="4.5"
-              color="amber"
-              density="compact"
-              size="small"
-              half-increments
-              readonly
-            ></v-rating>
+            <v-card-text>
+              <v-row align="center" class="mx-0">
+                <v-rating :model-value="4.5" color="amber" density="compact" size="small" half-increments
+                  readonly></v-rating>
 
-            <div class="text-grey ms-4">
-              4.5 (413)
-            </div>
-          </v-row>
+                <div class="text-grey ms-4">
+                  4.5 (413)
+                </div>
+              </v-row>
 
-          <div class="my-4 text-subtitle-1">
-            $ • Italian, Cafe
-          </div>
+              <div class="my-4 text-subtitle-1">
+                7$ • La paz, Bolivia
+              </div>
 
-          <div>Small plates, salads & sandwiches - an intimate setting with 12 indoor seats plus patio seating.</div>
-        </v-card-text>
+              <div>Sistema para rastrear, gestionar y optimizar niveles de inventario empresarial.</div>
+            </v-card-text>
 
-        <v-divider class="mx-4 mb-1"></v-divider>
+            <v-divider class="mx-4 mb-1"></v-divider>
 
-        <v-card-title>Tonight's availability</v-card-title>
+            <v-card-actions>
+              <v-btn color="deep-purple-lighten-2" text="Comprar" block border @click="reserve"></v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-col>
 
-        <div class="px-4 mb-2">
-          <v-chip-group v-model="selection" selected-class="bg-deep-purple-lighten-2">
-            <v-chip>5:30PM</v-chip>
+        <v-col cols="auto" class="mx-1">
+          <v-card :disabled="loading" :loading="loading" max-width="374">
+            <template v-slot:loader="{ isActive }">
+              <v-progress-linear :active="isActive" color="deep-purple" height="4" indeterminate></v-progress-linear>
+            </template>
 
-            <v-chip>7:30PM</v-chip>
+            <v-img height="250"
+              src="public/el concepto del sistema de control de inventario, el gerente profesional y el trabajador están verificando el suministro de bienes y existencias, la gestión de inventario con la demanda de bienes.jpeg"
+              cover></v-img>
 
-            <v-chip>8:00PM</v-chip>
+            <v-card-item>
+              <v-card-title>Plan Avanzado</v-card-title>
 
-            <v-chip>9:00PM</v-chip>
-          </v-chip-group>
-        </div>
+              <v-card-subtitle>
+                <span class="me-1">Popular</span>
 
-        <v-card-actions>
-          <v-btn
-            color="deep-purple-lighten-2"
-            text="Reserve"
-            block
-            border
-            @click="reserve"
-          ></v-btn>
-        </v-card-actions>
-      </v-card>
+                <v-icon color="error" icon="mdi-fire-circle" size="small"></v-icon>
+              </v-card-subtitle>
+            </v-card-item>
+
+            <v-card-text>
+              <v-row align="center" class="mx-0">
+                <v-rating :model-value="5" color="amber" density="compact" size="small" half-increments
+                  readonly></v-rating>
+
+                <div class="text-grey ms-4">
+                  5 (678)
+                </div>
+              </v-row>
+
+              <div class="my-4 text-subtitle-1">
+                10$ • La paz, Bolivia
+              </div>
+
+              <div>Sistema avanzado para rastrear, gestionar y optimizar inventario empresarial.</div>
+            </v-card-text>
+
+            <v-divider class="mx-4 mb-1"></v-divider>
+
+            <v-card-actions>
+              <v-btn color="deep-purple-lighten-2" text="Comprar" block border @click="reserve"></v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-col>
+      </v-row>
     </div>
   </v-app>
 </template>
 
 <script>
-  export default {
-    data: () => ({
-      loading: false,
-      selection: 1,
-    }),
+import { useRouter } from 'vue-router'
 
-    methods: {
-      reserve () {
+export default {
+  data: () => ({
+    loading: false,
+    selection: 1,
+  }),
+
+  setup() {
+    const router = useRouter()
+
+    const redirectTo = (path) => {
+      router.push(path)
+    }
+
+    return {
+      redirectTo,
+      reserve() {
         this.loading = true
-
         setTimeout(() => (this.loading = false), 2000)
       },
-    },
-  }
+    }
+  },
+}
 </script>
 
 <style scoped>

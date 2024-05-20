@@ -3,7 +3,7 @@
       <v-toolbar-title>IzziStocks</v-toolbar-title>
       <v-btn text @click="redirectTo('/')">Pagina Principal</v-btn>
       <v-btn text @click="redirectTo('/products')">Planes y servicios</v-btn>
-      <v-btn text @click="redirectTo('/about')">Informacion</v-btn>
+      <v-btn text @click="redirectTo('/about')">sobre nosotros</v-btn>
     </v-app-bar>
   </template>
   

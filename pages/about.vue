@@ -1,10 +1,10 @@
 <template>
   <v-app>
     <v-app-bar app color="primary">
-      <v-toolbar-title>My App</v-toolbar-title>
-      <v-btn text @click="redirectTo('/')">Home</v-btn>
-      <v-btn text @click="redirectTo('/products')">Products</v-btn>
-      <v-btn text @click="redirectTo('/about')">About</v-btn>
+      <v-toolbar-title>IzziStocks</v-toolbar-title>
+      <v-btn text @click="redirectTo('/')">pagina principal</v-btn>
+      <v-btn text @click="redirectTo('/products')">Planes y servicios</v-btn>
+      <v-btn text @click="redirectTo('/about')">sobre nosotros</v-btn>
     </v-app-bar>
 
     <v-main>
