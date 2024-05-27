@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div class="content" :style="contentStyle">
     <div class="text-center">
       <h1 :style="{ fontSize: textSize + 'px' }" class="titulo">Nuestro sistema de inventarios</h1>
       <p class="descripcion">Gestiona y controla productos, optimizando niveles de stock eficientemente.</p>
@@ -10,15 +10,30 @@
 
 <script>
 export default {
-  data() {
-    return {
-      textSize: 70 // Tamaño de texto inicial
-    };
+  props: {
+    textSize: {
+      type: Number,
+      default: 70
+    },
+    marginTop: {
+      type: String,
+      default: '0px'
+    },
+    marginBottom: {
+      type: String,
+      default: '-60px'
+    }
+  },
+  computed: {
+    contentStyle() {
+      return {
+        marginTop: this.marginTop,
+        marginBottom: this.marginBottom
+      };
+    }
   },
   methods: {
     pruebaGratis() {
-      // Acción al hacer clic en el botón "¡Pruébalo gratis!"
-      // Aquí puedes agregar la lógica para redirigir al usuario a una página de prueba gratuita o abrir un formulario de registro
       console.log('Botón de prueba gratis clickeado');
     }
   }
@@ -30,9 +45,9 @@ export default {
 
 .content {
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  height: 80vh; /* Opcional: ajusta la altura según tus necesidades */
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* Ajusta la altura según tus necesidades */
 }
 
 .text-center {
@@ -40,29 +55,29 @@ export default {
 }
 
 .titulo {
-  font-family: 'Caveat', cursive; /* Utilizamos 'Caveat' como la fuente principal */
-  margin: 0; /* Elimina el margen superior e inferior */
+  font-family: 'Caveat', cursive;
+  margin: 0;
 }
 
 .descripcion {
-  font-size: 24px; /* Tamaño de texto para la descripción */
+  font-size: 24px;
   margin-top: 20px; /* Espacio entre el título y la descripción */
   font-family: 'Caveat', cursive;
 }
 
 .prueba-btn {
-  margin-top: 20px; /* Espacio entre la descripción y el botón */
-  font-size: 18px; /* Tamaño de texto del botón */
+  margin-top: 10px; /* Espacio entre la descripción y el botón */
+  font-size: 18px;
   padding: 10px 20px;
-  color: white; /* Color del texto del botón */
-  background-color: #d29cf9; /* Color de fondo del botón (igual que el app bar) */
-  border: none; /* Sin borde */
-  border-radius: 4px; /* Bordes redondeados */
-  cursor: pointer; /* Cursor de mano al pasar sobre el botón */
-  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+  color: white;
+  background-color: #d29cf9;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .prueba-btn:hover {
-  background-color: #d6baf8; /* Color de fondo al pasar el mouse (más oscuro) */
+  background-color: #d6baf8;
 }
 </style>
