@@ -1,5 +1,5 @@
 <template>
-  <v-container>  
+  <v-container>
     <!-- Características Principales -->
     <v-row justify-center>
       <v-col cols="12" class="text-center">
@@ -7,9 +7,6 @@
         <v-row>
           <v-col cols="12" sm="4">
             <v-list-item>
-              <v-list-item-icon>
-                <v-icon class="custom-icon">mdi-check-circle</v-icon>
-              </v-list-item-icon>
               <v-list-item-content>
                 <v-list-item-title>Gestión Centralizada</v-list-item-title>
                 <v-list-item-subtitle>Unifica todo tu inventario en una sola plataforma</v-list-item-subtitle>
@@ -18,9 +15,6 @@
           </v-col>
           <v-col cols="12" sm="4">
             <v-list-item>
-              <v-list-item-icon>
-                <v-icon class="custom-icon">mdi-check-circle</v-icon>
-              </v-list-item-icon>
               <v-list-item-content>
                 <v-list-item-title>Registro de Transacciones</v-list-item-title>
                 <v-list-item-subtitle>Registra todas las transacciones de forma clara y precisa</v-list-item-subtitle>
@@ -29,9 +23,6 @@
           </v-col>
           <v-col cols="12" sm="4">
             <v-list-item>
-              <v-list-item-icon>
-                <v-icon class="custom-icon">mdi-check-circle</v-icon>
-              </v-list-item-icon>
               <v-list-item-content>
                 <v-list-item-title>Informes Financieros</v-list-item-title>
                 <v-list-item-subtitle>Genera informes financieros detallados para una mejor toma de decisiones</v-list-item-subtitle>
@@ -132,3 +123,4 @@ p {
   text-align: center;
 }
 </style>
+  
