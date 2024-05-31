@@ -9,35 +9,26 @@
     </v-app-bar>
 
     <v-main>
-      <v-container fluid>
-        <v-row justify="center">
-          <v-col cols="12" sm="8">
-            <v-card class="custom-card elevation-12">
-              <v-img
-                src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-                height="200"
-                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-              >
-                <v-container fill-height fluid>
-                  <v-row justify="center" align="center">
-                    <v-col>
-                      <h1 class="headline white--text mb-2">Sobre Nosotros</h1>
-                      <div class="caption white--text">Conoce más sobre nuestra empresa</div>
-                    </v-col>
-                  </v-row>
-                </v-container>
-              </v-img>
-
-              <v-card-text>
-                <p class="headline">Quiénes Somos</p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate, nisl ac malesuada sodales, justo ex convallis lorem, quis tempus purus libero sed dui. Aliquam vel vestibulum turpis. In hac habitasse platea dictumst.
-                </p>
-                <p>
-                  Nulla facilisi. Nullam id urna vel nisi suscipit gravida. Morbi scelerisque vestibulum tellus vel consectetur. Integer in tellus vitae ante volutpat vestibulum. Donec eget odio justo. Integer maximus fringilla nulla a ullamcorper.
-                </p>
-              </v-card-text>
-            </v-card>
+      <v-container class="about-container" fluid>
+        <v-row align="center" justify="space-between">
+          <v-col cols="12" sm="6">
+            <div class="text-content">
+              <h1 class="headline">Sobre Nosotros</h1>
+              <p>
+                Somos una empresa especializada en sistemas de ventas e inventario, comprometidos con brindar soluciones innovadoras y de alta calidad para nuestros clientes.
+              </p>
+              <h2 class="subheadline">Nuestra Misión</h2>
+              <p>
+                Nuestra misión es brindar soluciones efectivas y personalizadas para nuestros clientes, ayudándolos a mejorar su eficiencia y productividad en la gestión de sus ventas e inventario.
+              </p>
+              <h2 class="subheadline">Nuestra Visión</h2>
+              <p>
+                Nuestra visión es ser líderes en el mercado de sistemas de ventas e inventario, conocidos por nuestra excelencia en la entrega de soluciones innovadoras y de alta calidad.
+              </p>
+            </div>
+          </v-col>
+          <v-col cols="12" sm="6">
+            <v-img src="https://source.unsplash.com/random/800x600" class="project-image"></v-img>
           </v-col>
         </v-row>
       </v-container>
@@ -56,27 +47,19 @@ export default {
 }
 </script>
 
-<style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap');
 
+<style scoped>
 .custom-app-bar {
-  background-color: white;
-  opacity: 1;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid #E0E0E0;
+  background-color: #ffffff;
+  box-shadow: none;
+  border-bottom: none;
   font-family: 'Noto Sans', sans-serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 16px;
-  height: 64px;
-  z-index: 1000;
 }
 
 .app-title {
-  color: #8c7ae6;
+  color: #8c7ae6; /* Cambia el color del logo */
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .v-spacer {
@@ -84,9 +67,9 @@ export default {
 }
 
 .nav-btn {
-  color: #681919;
+  color: #000000;
   font-weight: 500;
-  text-transform: uppercase; /* Transform text to uppercase */
+  text-transform: uppercase;
   transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
@@ -97,23 +80,45 @@ export default {
   cursor: pointer;
 }
 
+.about-container {
+  padding: 50px 20px;
+}
+
+.text-content {
+  max-width: 600px;
+  font-family: 'Noto Sans', sans-serif; /* Cambio de tipo de letra */
+}
+
 .headline {
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  color: #3E2723;
+  color: #000000;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
 }
 
-.custom-card {
-  background-color: #F3E5F5;
-  border: 1px solid #8E44AD;
+.subheadline {
+  color: #000000;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
 }
 
-.caption {
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  color: #5D4037;
+p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
-.v-card-text p {
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  color: #3E2723;
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+  transform: translateY(-5px);
 }
 </style>
