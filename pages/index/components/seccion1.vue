@@ -102,10 +102,10 @@ export default {
 <style scoped>
 /* Estilos personalizados para esta página */
 .headline {
-  font-family: 'Noto Sans', sans-serif;
-  color: #3E2723;
+  color: #000000;
+  font-weight: 700;
+  margin-bottom: 20px;
   font-size: 2.5rem;
-  margin-bottom: 1rem;
 }
 
 .section {

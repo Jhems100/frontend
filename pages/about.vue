@@ -7,7 +7,7 @@
       <v-btn text class="nav-btn" @click="redirectTo('/about')">SOBRE NOSOTROS</v-btn>
       <v-spacer></v-spacer>
     </v-app-bar>
-
+    
     <v-main>
       <v-container class="about-container" fluid>
         <v-row align="center" justify="space-between">

@@ -8,7 +8,7 @@
     <v-btn icon @click="redirectTo('/login')" class="nav-btn">
       <v-icon color="#000000">mdi-account</v-icon>
     </v-btn>
-  </v-app-bar>
+  </v-app-bar>//
 </template>
 
 <script>
