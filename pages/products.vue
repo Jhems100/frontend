@@ -56,7 +56,7 @@
               <v-divider class="mx-4 mb-1"></v-divider>
 
               <v-card-actions>
-                <v-btn color="deep-purple-lighten-2" text="Comprar" block border @click="reserve('plan_basico')"></v-btn>
+                <v-btn color="deep-purple-lighten-2" block border class="nav-btn" @click="redirectTo('/plan_basico')">Ver Más</v-btn>
               </v-card-actions>
             </v-card>
           </v-col>
@@ -101,7 +101,7 @@
               <v-divider class="mx-4 mb-1"></v-divider>
 
               <v-card-actions>
-                <v-btn color="deep-purple-lighten-2" text="Comprar" block border @click="reserve('plan_avanzado')"></v-btn>
+                <v-btn color="deep-purple-lighten-2" block border class="nav-btn" @click="redirectTo('/plan_avanzado')">Ver más</v-btn>
               </v-card-actions>
             </v-card>
           </v-col>
@@ -146,7 +146,7 @@
               <v-divider class="mx-4 mb-1"></v-divider>
 
               <v-card-actions>
-                <v-btn color="deep-purple-lighten-2" text="Comprar" block border @click="reserve('plan_premium')"></v-btn>
+                <v-btn color="deep-purple-lighten-2" block border @click="reserve('plan_premium')"></v-btn>
               </v-card-actions>
             </v-card>
           </v-col>
