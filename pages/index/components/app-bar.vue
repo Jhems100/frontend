@@ -8,7 +8,6 @@
     <v-btn icon @click="redirectTo('/login')" class="nav-btn">
       <v-icon color="#000000">mdi-account</v-icon>
     </v-btn>
-
   </v-app-bar>
 </template>
 
@@ -26,7 +25,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap');
 
 .custom-app-bar {
-  background-color: white;
+  background-color: white; /* Cambia el color de fondo a rosado */
   opacity: 1; /* Ensure the app bar is not transparent */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   border-bottom: 1px solid #E0E0E0; 
@@ -47,13 +46,6 @@ export default {
 
 .v-spacer {
   flex: 1;
-}
-
-.nav-btn {
-  color: #681919; 
-  font-weight: 500;
-  text-transform: none;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .nav-btn:hover {

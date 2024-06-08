@@ -71,7 +71,7 @@
 
     <v-row justify="center">
       <v-col cols="12" md="8" class="text-center">
-        <v-img src="https://i.pinimg.com/736x/5e/a3/b6/5ea3b68c4291fe3953b1d28bec5ace88.jpg" alt="Proceso de Reposición" max-width="100%"></v-img>
+        <v-img src="https://www.nasapack.com/wp-content/uploads/2022/03/sistema-de-inventarios-perpetuos-1.jpg" alt="Proceso de Reposición" max-width="50%" class="mx-auto"></v-img>
       </v-col>
     </v-row>
 
@@ -92,15 +92,13 @@
   </v-container>
 </template>
 
-<script>
-export default {
-  name: 'InventoryPage',
-  // Puedes agregar lógica adicional aquí si es necesario
-}
-</script>
 
 <style scoped>
-/* Estilos personalizados para esta página */
+.centered-img {
+  display: block; /* Asegura que la imagen se comporte como un bloque */
+  margin-left: auto; /* Centra la imagen horizontalmente */
+  margin-right: auto; /* Centra la imagen horizontalmente */
+}
 .headline {
   color: #000000;
   font-weight: 700;

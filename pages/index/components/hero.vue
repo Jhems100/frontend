@@ -48,10 +48,17 @@ export default {
   justify-content: center;
   align-items: center;
   height: 80vh; /* Ajusta la altura según tus necesidades */
+  background-image: url('https://images.unsplash.com/photo-1557682250-33bd709cbe85?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
 .text-center {
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para mejorar la legibilidad del texto */
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .titulo {
@@ -75,9 +82,5 @@ export default {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
-
-.prueba-btn:hover {
-  background-color: #d6baf8;
 }
 </style>
