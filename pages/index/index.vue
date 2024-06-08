@@ -13,5 +13,3 @@ import appbar from "./components/app-bar.vue"
 import Hero from "./components/hero.vue"
 import contact from "./components/contact.vue"
 </script>
-
-  
