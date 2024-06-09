@@ -16,6 +16,7 @@
         <v-row align="center" justify="space-between">
           <v-col cols="12" sm="6">
             <div class="text-content">
+              
               <h1 class="headline">Sobre Nosotros</h1>
               <p>
                 Somos una empresa especializada en sistemas de ventas e inventario, comprometidos con brindar soluciones innovadoras y de alta calidad para nuestros clientes.

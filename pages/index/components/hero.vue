@@ -2,8 +2,8 @@
   <div class="content" :style="contentStyle">
     <div class="text-center">
       <h1 :style="{ fontSize: textSize + 'px' }" class="titulo">Nuestro sistema de inventarios</h1>
-      <p class="descripcion">Gestiona y controla productos, optimizando niveles de stock eficientemente.</p>
-      <button class="prueba-btn" @click="pruebaGratis">¡Pruébalo gratis!</button>
+      <p class="descripcion">Gestiona y controla productos, optimizando niveles de stock eficientemente.</p><br>
+      <button class="prueba-btn" @click="pruebaGratis">¡Pruébalo ahora!</button>
     </div>
   </div>
 </template>
@@ -34,7 +34,7 @@ export default {
   },
   methods: {
     pruebaGratis() {
-      console.log('Botón de prueba gratis clickeado');
+      this.$router.push('/products');
     }
   }
 }
@@ -48,7 +48,7 @@ export default {
   justify-content: center;
   align-items: center;
   height: 80vh; /* Ajusta la altura según tus necesidades */
-  background-image: url('https://images.unsplash.com/photo-1557682250-33bd709cbe85?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D');
+  background-image: url('https://images.unsplash.com/photo-1557682250-33bd709cbe85?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWF8MXx8fGVufDB8fHx8fA%3D%3D');
   background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
   background-position: center; /* Centra la imagen de fondo */
   background-repeat: no-repeat; /* Evita que la imagen se repita */

@@ -6,6 +6,9 @@
       <v-btn text class="nav-btn" @click="redirectTo('/products')">Planes y servicios</v-btn>
       <v-btn text class="nav-btn" @click="redirectTo('/about')">Sobre nosotros</v-btn>
       <v-spacer></v-spacer>
+      <v-btn icon @click="redirectTo('/login')" class="nav-btn">
+      <v-icon color="#000000">mdi-account</v-icon>
+    </v-btn>
     </v-app-bar>
 
     <div class="d-flex align-center justify-center fill-height">
@@ -146,7 +149,7 @@
               <v-divider class="mx-4 mb-1"></v-divider>
 
               <v-card-actions>
-                <v-btn color="deep-purple-lighten-2" block border @click="reserve('plan_premium')"></v-btn>
+                <v-btn color="deep-purple-lighten-2" block border class="nav-btn" @click="redirectTo('/plan_premium')">Ver más</v-btn>
               </v-card-actions>
             </v-card>
           </v-col>

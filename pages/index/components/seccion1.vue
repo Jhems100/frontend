@@ -48,7 +48,8 @@
               <v-card class="custom-card">
                 <v-card-text>
                   <h3 class="headline">Eficiencia Mejorada</h3>
-                  <p>Con funcionalidades automatizadas y una interfaz fácil de usar, nuestro sistema te permite ahorrar tiempo y recursos en la gestión de inventario.</p>
+                  <p>Con funcionalidades automatizadas y una interfaz fácil de usar, nuestro sistema te permite ahorrar
+                    tiempo y recursos en la gestión de inventario.</p>
                 </v-card-text>
               </v-card>
             </v-col>
@@ -61,17 +62,29 @@
 
     <!-- Reposición Impecable -->
     <v-container class="section text-center">
-      <v-row>
-        <v-col cols="12">
-          <h2 class="headline">Reposición Impecable</h2>
-          <p>Mantén tu inventario siempre en óptimas condiciones con Izzistocks. Nuestro plan maestro de producción y estrategias de reposición automática aseguran que nunca te quedes sin stock. Automatizamos el seguimiento a proveedores, enviando mensajes y confirmando órdenes de compra, para una gestión eficiente y sin contratiempos.</p>
-        </v-col>
-      </v-row>
-    </v-container>
+  <v-row class="d-flex justify-center">
+    <v-col cols="12" md="10">
+      <v-card class="custom-card">
+        <v-card-text>
+          <v-row>
+            <v-col cols="12">
+              <h2 class="headline">Reposición Impecable</h2>
+              <p>
+                Mantén tu inventario siempre en óptimas condiciones con Izzistocks. Nuestro plan maestro de producción y estrategias de reposición automática aseguran que nunca te quedes sin stock. Automatizamos el seguimiento a proveedores, enviando mensajes y confirmando órdenes de compra, para una gestión eficiente y sin contratiempos.
+              </p>
+            </v-col>
+          </v-row>
+        </v-card-text>
+      </v-card>
+    </v-col>
+  </v-row>
+</v-container>
+
 
     <v-row justify="center">
       <v-col cols="12" md="8" class="text-center">
-        <v-img src="https://www.nasapack.com/wp-content/uploads/2022/03/sistema-de-inventarios-perpetuos-1.jpg" alt="Proceso de Reposición" max-width="50%" class="mx-auto"></v-img>
+        <v-img src="https://www.nasapack.com/wp-content/uploads/2022/03/sistema-de-inventarios-perpetuos-1.jpg"
+          alt="Proceso de Reposición" max-width="50%" class="mx-auto"></v-img>
       </v-col>
     </v-row>
 
@@ -79,10 +92,64 @@
 
     <!-- Nuestro proyecto -->
     <v-container class="section text-center">
-      <v-row>
-        <v-col cols="12">
-          <h2 class="headline">Nuestro proyecto</h2>
-          <p>Nuestro sistema de inventario es la herramienta perfecta para optimizar la gestión de tus productos y llevar tu negocio al siguiente nivel. Además de unificar tu inventario, registrar transacciones y generar informes financieros, te proporciona una eficiencia mejorada para ahorrar tiempo y recursos. ¡Únete a cientos de empresas que ya han experimentado el poder de una gestión de inventario eficiente con nosotros!</p>
+  <v-row class="d-flex justify-center">
+    <v-col cols="12" md="10">
+      <v-card class="custom-card">
+        <v-card-text>
+          <v-row>
+            <v-col cols="12">
+              <h2 class="headline">Nuestro proyecto</h2>
+              <p>
+                Nuestro sistema de inventario es la herramienta perfecta para optimizar la gestión de tus productos y llevar tu negocio al siguiente nivel. Además de unificar tu inventario, registrar transacciones y generar informes financieros, te proporciona una eficiencia mejorada para ahorrar tiempo y recursos. ¡Únete a cientos de empresas que ya han experimentado el poder de una gestión de inventario eficiente con nosotros!
+              </p>
+            </v-col>
+          </v-row>
+        </v-card-text>
+      </v-card>
+    </v-col>
+  </v-row>
+</v-container>
+
+
+    <v-container class="section text-center">
+      <v-row class="d-flex justify-center">
+        <v-col cols="12" md="10">
+          <v-card class="custom-card">
+            <v-card-text>
+              <v-row>
+                <v-col cols="12">
+                  <h2 class="headline">Optimiza tus ventas e inventarios</h2>
+                  <p>Nuestro sistema de ventas e inventario te permite gestionar eficientemente tu stock con funciones
+                    avanzadas como números de serie, lotes y estrategias de almacenamiento. Además, nuestra búsqueda de
+                    inventario rápida te proporciona información instantánea sobre la ubicación de tus productos en
+                    almacenes y sucursales, facilitando una gestión ágil y eficiente de tus operaciones comerciales.<br>
+                  </p>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+
+
+    <v-container class="section text-center">
+      <v-row class="d-flex justify-center">
+        <v-col cols="12" md="10">
+          <v-card class="custom-card">
+            <v-card-text>
+              <v-row>
+                <v-col cols="12">
+                  <h2 class="headline">Todas las funciones bien hechas</h2>
+                  <p>Nuestro sistema de ventas e inventario te permite gestionar eficientemente tu stock con funciones
+                    avanzadas como números de serie, lotes y estrategias de almacenamiento. Además, nuestra búsqueda de
+                    inventario rápida te proporciona información instantánea sobre la ubicación de tus productos en
+                    almacenes y sucursales, facilitando una gestión ágil y eficiente de tus operaciones comerciales.<br>
+                  </p>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
         </v-col>
       </v-row>
     </v-container>
@@ -95,12 +162,16 @@
 
 <style scoped>
 .centered-img {
-  display: block; /* Asegura que la imagen se comporte como un bloque */
-  margin-left: auto; /* Centra la imagen horizontalmente */
-  margin-right: auto; /* Centra la imagen horizontalmente */
+  display: block;
+  /* Asegura que la imagen se comporte como un bloque */
+  margin-left: auto;
+  /* Centra la imagen horizontalmente */
+  margin-right: auto;
+  /* Centra la imagen horizontalmente */
 }
+
 .headline {
-  color: #000000;
+  color: #8E44AD;
   font-weight: 700;
   margin-bottom: 20px;
   font-size: 2.5rem;
@@ -146,5 +217,5 @@ p {
 .v-divider {
   margin: 30px 0;
   border-color: #8E44AD;
-}
-</style>
+}</style>
+
