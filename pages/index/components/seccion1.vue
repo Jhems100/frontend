@@ -59,6 +59,12 @@
     </v-container>
 
     <v-divider></v-divider>
+    <v-row justify="center">
+      <v-col cols="12" md="8" class="text-center">
+        <v-img src="https://i.pinimg.com/564x/e8/80/3d/e8803dbae6888255978f5dd8ce946c85.jpg"
+          alt="Proceso de Reposición" max-width="50%" class="mx-auto"></v-img>
+      </v-col>
+    </v-row>
 
     <!-- Reposición Impecable -->
     <v-container class="section text-center">
@@ -110,6 +116,14 @@
   </v-row>
 </v-container>
 
+<v-row justify="center">
+      <v-col cols="12" md="8" class="text-center">
+        <v-img src="https://i.pinimg.com/564x/21/18/d8/2118d8a8fc58625375ebe42a4acfb8f7.jpg"
+          alt="Proceso de Reposición" max-width="50%" class="mx-auto"></v-img>
+      </v-col>
+    </v-row>
+
+    <v-divider></v-divider>
 
     <v-container class="section text-center">
       <v-row class="d-flex justify-center">
@@ -132,6 +146,14 @@
       </v-row>
     </v-container>
 
+    <v-row justify="center">
+      <v-col cols="12" md="8" class="text-center">
+        <v-img src="https://i.pinimg.com/564x/39/32/d3/3932d32bb047d7262d1290686d8b58aa.jpg"
+          alt="Proceso de Reposición" max-width="50%" class="mx-auto"></v-img>
+      </v-col>
+    </v-row>
+
+    <v-divider></v-divider>
 
     <v-container class="section text-center">
       <v-row class="d-flex justify-center">
@@ -153,6 +175,15 @@
         </v-col>
       </v-row>
     </v-container>
+    
+    <v-row justify="center">
+      <v-col cols="12" md="8" class="text-center">
+        <v-img src="https://i.pinimg.com/564x/71/2f/98/712f9826d9b9ee7b6d521ae5e5e06015.jpg"
+          alt="Proceso de Reposición" max-width="50%" class="mx-auto"></v-img>
+      </v-col>
+    </v-row>
+
+    <v-divider></v-divider>
 
     <!-- Línea separadora después de Nuestro proyecto -->
     <v-divider></v-divider>
