@@ -6,7 +6,23 @@
       max-width="448"
       rounded="lg"
     >
-      <h1 class="headline text-center">Iniciar Sesión</h1>
+      <h1 class="headline text-center">Registro</h1>
+
+      <v-text-field
+        density="compact"
+        placeholder="Nombre"
+        prepend-inner-icon="mdi-account-outline"
+        variant="outlined"
+        class="custom-text-field"
+      ></v-text-field>
+
+      <v-text-field
+        density="compact"
+        placeholder="Apellido"
+        prepend-inner-icon="mdi-account-outline"
+        variant="outlined"
+        class="custom-text-field"
+      ></v-text-field>
 
       <v-text-field
         density="compact"
@@ -18,14 +34,6 @@
 
       <div class="text-subtitle-1 text-medium-emphasis d-flex align-center justify-space-between">
         Contraseña
-
-        <a
-          class="text-caption text-decoration-none text-blue"
-          href="#"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          ¿Olvidaste tu contraseña?</a>
       </div>
 
       <v-text-field
@@ -39,32 +47,22 @@
         @click:append-inner="visible = !visible"
       ></v-text-field>
 
-      <v-card
-        class="mb-12"
-        color="surface-variant"
-        variant="tonal"
-      >
-        <v-card-text class="text-medium-emphasis text-caption">
-          Advertencia: Después de 3 intentos fallidos consecutivos, tu cuenta se bloqueará temporalmente durante tres horas. Si necesitas iniciar sesión ahora, también puedes hacer clic en "¿Olvidaste tu contraseña?" a continuación para restablecer la contraseña.
-        </v-card-text>
-      </v-card>
-
       <v-btn
         class="mb-8 custom-btn"
         size="large"
         variant="tonal"
-        block
+        @click="redirectTo('/products')"
       >
-        Iniciar Sesión
+        Registrarse
       </v-btn>
 
       <v-card-text class="text-center">
         <a
           class="text-blue text-decoration-none"
           href="javascript:void(0);"
-          @click="redirectTo('/registro')"
+          @click="redirectTo('/login')"
         >
-          Regístrate ahora <v-icon icon="mdi-chevron-right"></v-icon>
+          ¿Ya tienes una cuenta? Inicia sesión <v-icon icon="mdi-chevron-right"></v-icon>
         </a>
       </v-card-text>
     </v-card>
