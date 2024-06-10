@@ -31,8 +31,8 @@
               </p>
             </div>
           </v-col>
-          <v-col cols="12" sm="6">
-            <v-img src="https://source.unsplash.com/random/800x600" class="project-image"></v-img>
+          <v-col cols="10" sm="5">
+            <v-img src="https://i.pinimg.com/736x/9f/6a/b3/9f6ab3990fbaae9d76ae11dd0c0c1bed.jpg" class="project-image"></v-img>
           </v-col>
         </v-row>
         <!-- Formulario de contacto -->
